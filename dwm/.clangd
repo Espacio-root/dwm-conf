@@ -1,0 +1,11 @@
+CompileFlags:
+  Add: [
+    -x, c,                    # Force C mode
+    -std=c99,                # dwm uses C99
+    -I/usr/include/X11,      # X11 headers
+    -I/usr/include/freetype2, # For font rendering (dmenu)
+    -D_DEFAULT_SOURCE,
+    -D_BSD_SOURCE,
+    -D_POSIX_C_SOURCE=2,
+    -DVERSION="6.4"          # Adjust to your dwm version
+  ]
